@@ -90,7 +90,7 @@ export default function SendRequestPage() {
               {/* Header */}
       <div style={{ width: "100%", backgroundColor: "rgb(87, 180, 255)", paddingTop: "10%" }}>
         <div style={{ padding: "1rem", display: "flex", alignItems: "center", gap: ".5rem" }}>
-          <img src="/logo/logo_circle.png" width="15%" alt="Logo" />
+          <img src="./logo/logo_circle.png" width="15%" alt="Logo" />
           <h1 style={{ fontSize: "2.5rem", margin: 0 }}>NeoBank</h1>
         </div>
       </div>

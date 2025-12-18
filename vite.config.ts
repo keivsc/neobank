@@ -9,6 +9,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/neobank/', // <-- add this line
   server: {
     allowedHosts: true, // ✅ This allows all host headers, including ngrok
     port: 5173,

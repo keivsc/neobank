@@ -57,7 +57,7 @@ function Login(){
       {/* Top logo container */}
       <div style={{ position: "absolute", top: "2%", left: "50%", transform: "translateX(-50%)", width: "50%" }}>
         <img 
-          src="/logo/logo_rectangle.png" 
+          src="./logo/logo_rectangle.png" 
           style={{ width: "100%" }}
         />
       </div>
