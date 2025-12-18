@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.phone-wrapper {
+  position: relative; /* make absolute children relative to this */
+  display: inline-block;
+  width: 40vh; /* desired phone width */
+}
+
+.phone-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative; /* relative is fine for stacking */
+  z-index: 2;         /* behind content */
+  pointer-events: none;
+}
+
+.phone-content {
+  position: absolute;
+  top: 3%;
+  left: 6.7%;
+  width: 83%;
+  height: 92%;
+  border-radius: 10%;
+  background: white;
+  overflow: hidden;
+  z-index: 1;         /* above image */
+}

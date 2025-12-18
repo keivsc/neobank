@@ -1,0 +1,34 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  border-radius: 1rem;
+  width: 24rem;
+  height:auto;
+  margin-top: 12rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  padding-left:1rem
+}
+
+.form-card label {
+  display: block;
+  color: rgb(44, 127, 196);
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+  text-align: left;
+}
+
+.form-card input{
+  font-size: 1.5rem;
+  width: 95%;
+  height:30%;
+  background-color: white;
+  color: rgb(44, 127, 196);
+  border-color: rgb(44, 127, 196);
+  border-radius: .4em;
+}

@@ -1,0 +1,191 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.phone-wrapper {
+  position: relative; /* make absolute children relative to this */
+  display: inline-block;
+  width: 40vh; /* desired phone width */
+}
+
+.phone-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative; /* relative is fine for stacking */
+  z-index: 2;         /* behind content */
+  pointer-events: none;
+}
+
+.phone-content {
+  position: absolute;
+  top: 3%;
+  left: 8.7%;
+  width: 83%;
+  height: 93%;
+  border-radius: 2.3rem;
+  background: white;
+  overflow: hidden;
+  z-index: 1;         /* above image */
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+.btn-glass {
+  background: rgb(87, 180, 255); /* semi-transparent */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  width: 100%;   /* size 10% of parent width */
+  /* optional: height:auto to scale with content */
+  height: 100%;
+}
+
+.btn-glass:hover {
+  background: rgb(87, 180, 255, 0.5);
+  color:rgb(44, 127, 196);
+  backdrop-filter: blur(15px);
+}
+
+/* Basic editor styles */
+.tiptap {
+  :first-child {
+    margin-top: 0;
+  }
+
+  /* List styles */
+  ul,
+  ol {
+    padding: 0 1rem;
+    margin: 1.25rem 1rem 1.25rem 0.4rem;
+
+    li p {
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+    }
+  }
+
+  /* Heading styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.1;
+    margin-top: 2.5rem;
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+
+  /* Code and preformatted text styles */
+  code {
+    background-color: var(--purple-light);
+    border-radius: 0.4rem;
+    color: var(--black);
+    font-size: 0.85rem;
+    padding: 0.25em 0.3em;
+  }
+
+  pre {
+    background: var(--black);
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-family: 'JetBrainsMono', monospace;
+    margin: 1.5rem 0;
+    padding: 0.75rem 1rem;
+
+    code {
+      background: none;
+      color: inherit;
+      font-size: 0.8rem;
+      padding: 0;
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid var(--gray-3);
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--gray-2);
+    margin: 2rem 0;
+  }
+}
+
+.person-card {
+  padding: .2rem;
+  color: gray;
+  background: white;
+  border-radius: 1rem;
+  border: 2px solid black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s ease;
+}
+
+.person-card:hover {
+  background: rgb(189, 189, 189); 
+  color:black
+}
